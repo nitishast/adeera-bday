@@ -198,6 +198,8 @@ h1{margin:10px 0 4px;font-weight:400;line-height:1}
 .row{display:flex;gap:12px;align-items:center;padding:8px 0;color:#ffe066;font-size:15px;font-weight:700;line-height:1.2}
 .row+.row{border-top:2px dashed rgba(255,255,255,.28)}
 .row .e{flex:none;width:34px;height:34px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:18px;background:#ff6b6b;border:2px solid #fff}
+.row.big{font-size:20px}
+.row.big .e{width:40px;height:40px;font-size:22px}
 .row:nth-child(2) .e{background:#ffd93d}
 .row:nth-child(3) .e{background:#4dd4ff}
 .row small{display:block;font-weight:500;font-size:12.5px;color:#c8f5ee;margin-top:1px}
@@ -258,8 +260,8 @@ h1{margin:10px 0 4px;font-weight:400;line-height:1}
 
   <div class="z">
     <div class="info">
-      <div class="row"><span class="e">📅</span><div>Tuesday, 20 October<small>Dussehra 🎉</small></div></div>
-      <div class="row"><span class="e">🕕</span><div>Evening<small>Exact time coming soon</small></div></div>
+      <div class="row big"><span class="e">📅</span><div>Tuesday, 20 October<small>Dussehra 🎉</small></div></div>
+      <div class="row big"><span class="e">🕕</span><div>Evening<small>Exact time coming soon</small></div></div>
       <div class="row"><span class="e">📍</span><div>Venue<small>Surprise! 🤫</small></div></div>
     </div>
     <div class="foot">Come hungry, leave happy 😋 Reply 👍 if you're in!</div>
@@ -383,7 +385,7 @@ function msg(x,y,txt,big){
   var d=document.createElement('div');d.className='pm';d.textContent=txt;
   d.style.left=x+'px';d.style.top=y+'px';if(big)d.style.fontSize='30px';
   document.body.appendChild(d);
-  d.animate([{transform:'translate(-50%,-50%) scale(.4)',opacity:0},{transform:'translate(-50%,-90%) scale(1.15)',opacity:1,offset:.3},{transform:'translate(-50%,-170%) scale(1)',opacity:0}],{duration:big?2200:1400,easing:'ease-out'}).onfinish=function(){d.remove()};
+  d.animate([{transform:'translate(-50%,-50%) scale(.4)',opacity:0},{transform:'translate(-50%,-90%) scale(1.15)',opacity:1,offset:.3},{transform:'translate(-50%,-170%) scale(1)',opacity:0}],{duration:big?3200:2400,easing:'ease-out'}).onfinish=function(){d.remove()};
 }
 function pop(b){
   var i=bl.indexOf(b);if(i<0)return;bl.splice(i,1);
