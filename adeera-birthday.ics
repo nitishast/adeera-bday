@@ -10,7 +10,7 @@ DTSTART:20261020T123000Z
 DTEND:20261020T153000Z
 SUMMARY:Adeera's 3rd Birthday Party! 🎂
 DESCRIPTION:Come celebrate Adeera turning THREE! Cake, balloons, giggles & glitter await 🎈✨
-LOCATION:Bekal Cafe, Golden I
+LOCATION:Coming soon
 BEGIN:VALARM
 TRIGGER:-PT2H
 ACTION:DISPLAY
