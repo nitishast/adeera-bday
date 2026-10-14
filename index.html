@@ -212,6 +212,8 @@ h1{margin:10px 0 4px;font-weight:400;line-height:1}
 #gmh{position:absolute;left:0;right:0;top:0;z-index:5;padding:calc(env(safe-area-inset-top,0px) + 12px) 16px 0;pointer-events:none;display:none}
 #gmh .r{display:flex;justify-content:space-between;align-items:center}
 .gp{background:#ffd93d;color:#c2255c;border:3px solid #fff;border-radius:999px;padding:4px 16px;font-weight:700;font-size:20px;box-shadow:0 3px 0 rgba(10,95,110,.4)}
+.gp.big{font-size:34px;padding:6px 24px;animation:tmr 1s ease-in-out infinite}
+@keyframes tmr{50%{transform:scale(1.08)}}
 #gmbar{height:12px;margin-top:10px;background:rgba(255,255,255,.35);border:2px solid #fff;border-radius:999px;overflow:hidden}
 #gmbar i{display:block;height:100%;width:100%;background:#ff6b6b;border-radius:999px}
 #gmhint{display:none;text-align:center;color:#fff0a8;font-weight:700;font-size:13.5px;margin-top:9px;text-shadow:0 2px 0 rgba(10,95,110,.7);letter-spacing:.3px}
@@ -237,7 +239,7 @@ h1{margin:10px 0 4px;font-weight:400;line-height:1}
 </head>
 <body>
 <div id="gm"><div id="gml"></div>
-<div id="gmh"><div class="r"><div class="gp">⏱ <span id="gmt">20</span></div><div class="gp">🎈 <span id="gms2">0</span></div></div><div id="gmbar"><i></i></div><div id="gmhint">🎁 Keep popping — your invite reveals in 20 seconds!</div></div>
+<div id="gmh"><div class="r"><div class="gp big">⏱ <span id="gmt">20</span></div><div class="gp">🎈 <span id="gms2">0</span></div></div><div id="gmbar"><i></i></div><div id="gmhint">🎁 Keep popping — your invite reveals in 20 seconds!</div></div>
 <div id="gmpic"><img alt=""></div>
 <div class="gc" id="gms"><div><div class="gn">ADEERA</div><div class="g3">3</div><p>Pop balloons for 20 seconds to unlock the party details! 🎁</p><button id="gmgo">Play 🎈</button><div id="gmbst" style="display:none;color:#fff0a8;font-weight:700;font-size:14px;margin-top:10px;text-shadow:0 2px 0 rgba(10,95,110,.6)">Your best: <span id="gmbn">0</span> 🎈</div><button id="gmsk">Skip to invite</button></div></div>
 <div class="gc" id="gmr"><div class="gres">Time's up! 🎉<br>You popped <span id="gmn">0</span>!<br><span id="gmnb" style="font-size:24px"></span></div></div>
